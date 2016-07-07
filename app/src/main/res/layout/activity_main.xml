@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5077ba"
+    android:clipChildren="false">
+
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="#5077ba"
+        android:clipChildren="false">
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/cardViewText"
+            android:layout_width="@dimen/dimen_335"
+            android:layout_height="@dimen/dimen_320"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_56"
+            android:background="@android:color/white"
+            android:padding="@dimen/dimen_5"
+            card_view:cardCornerRadius="@dimen/dimen_5"
+            card_view:cardElevation="-5dp"
+            card_view:cardUseCompatPadding="true">
+
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_335"
+                android:layout_height="@dimen/dimen_320"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:id="@+id/tvCardInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:text="@string/app_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_24" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <com.swipecards.lib.SwipeFlingAdapterView
+            android:id="@+id/frame"
+            android:layout_width="@dimen/dimen_325"
+            android:layout_height="@dimen/dimen_262"
+            android:layout_gravity="top|center"
+            tools:context=".MainActivity" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/btnContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp">
+
+
+        <ImageView
+
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/dislike_unselected"
+            android:scaleType="centerInside" />
+
+        <ImageView
+
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/like_unselected"
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/undo"
+        android:layout_marginBottom="@dimen/dimen_32"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:visibility="visible"
+        android:src="@drawable/undo_button"
+        android:layout_marginLeft="@dimen/dimen_32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="orange">#F97A60</color>
+    <color name="darkpink">#E95871</color>
+    <color name="purple">#BB37F0</color>
+    <color name="yellow">#F9C660</color>
+    <color name="green">#8AF960</color>
+    <color name="blue">#609CF9</color>
+    <color name="cyan">#60E9F9</color>
+    <color name="wheat">#C6A309</color>
+    <color name="card_outline">#D0D0CE</color>
+
+
+</resources>
